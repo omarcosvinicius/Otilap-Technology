@@ -1,0 +1,432 @@
+/* Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Kanit', sans-serif;
+}
+
+html, body{
+	height: 100%;
+}
+
+/* Fim Reset */
+
+/* DIV's Gerais */
+
+.clear{
+	clear: both;
+}
+
+.container{
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Fim DIV's Gerais */
+
+/* Início Header */
+
+header{
+	padding: 20px 2%;
+	height: 120px;
+	background-color: #6948a2;
+}
+
+header .logo{
+	float: left;
+	width: 208px;
+	height: 82px;
+	background-image: url('../assets/otilap-technology-logo.png');
+	background-size: contain;
+
+}
+
+header nav.menu-desktop{
+	float: right;
+	padding: 20px 0;
+}
+
+header nav.menu-desktop ul{
+	list-style-type: none;
+}
+
+header nav.menu-desktop li{
+	float: left;
+	padding: 0 30px;
+	font-style: italic;
+	font-size: 23px;
+}
+
+header nav.menu-desktop a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}
+
+nav.menu-mobile{
+	display: none;
+	float: right;
+	width: 32px;
+	height: 32px;
+	margin: 20px 2%;
+	cursor: pointer;
+	background-image: url('../assets/menu-mobile.png');
+	background-position: center;
+	background-size: contain;
+}
+
+nav.menu-mobile:hover ul{
+	opacity: 1;
+
+}
+
+nav.menu-mobile ul{
+	opacity: 0;
+	transition: 1s;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0;
+	top: 80px;
+	width: 100%;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav.menu-mobile ul li:hover{
+	background-color: rgb(0, 0, 0);
+}
+
+nav.menu-mobile ul li{
+	transition: 0.4s;
+	border-bottom: 1px solid rgb(230, 230, 230);
+	padding: 8px 0;
+}
+
+nav.menu-mobile ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+/* Fim Header */
+
+/* Início Sessão Banner */
+
+section.banner{
+	width: 100%;
+	height: calc(100vh - 120px);
+	background-color: black;
+	background-image: url('../assets/bg.png');
+	background-size: contain;
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+section.banner a{
+	text-decoration: none;
+	color: black;
+}
+
+.text-banner{
+	padding: 100px;
+}
+
+.text-banner-single{
+	margin-top: 12px;
+	padding: 5px 15px;
+	width: 314px;
+	height: 50px;
+	background-image: url('../assets/box-text.png');
+	background-size: 100% 100%;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-style: italic;
+	color: white;
+}
+
+.text-banner .text-banner-single:nth-of-type(2){
+	width: 264px;
+	position: relative;
+	left: -12px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3){
+	width: 224px;
+	position: relative;
+	left: -22px;
+}
+
+.text-banner .text-banner-single:nth-of-type(4){
+	padding: 2px 17px;
+	width: 300px;
+	height: 30px;
+	position: relative;
+	left: -32px;
+	background-image: url('../assets/box-white-text.png');
+	font-size: 18px;
+}
+
+/* Fim Sessão Banner */
+
+/* Início Sessão Produtos Destaque */
+
+section.produtos-destaque{
+	padding: 90px 2%;
+}
+
+section.produtos-destaque .container{
+	padding: 40px 0;
+}
+
+
+.line-titulo{
+	max-width: 1400px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+.ln1{
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	top:20px;
+	background:black;
+}
+
+section.produtos-destaque .line-titulo h2{
+	padding: 0 20px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	font-size: 25px;
+	font-style: italic;
+	text-transform: uppercase;
+	background-color: white;
+}
+
+.vitrine-destaque{
+	float: left;
+	width: 33.3%;
+	margin-top: 20px;
+}
+
+.vitrine-destaque .produto-img{
+	width: 100%;
+	padding-top: 100%;
+	background-size: 100% 100%;
+	border: 8px solid white;
+}
+
+.img1{
+	background-image: url('../assets/pc01.jpg');
+}
+
+.img2{
+	background-image: url('../assets/teclado01.jpg');
+}
+
+.img3{
+	background-image: url('../assets/pc02.jpg');
+}
+
+.vitrine-destaque h2{
+	padding-left: 8px;
+	color: black;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.vitrine-destaque p{
+	padding: 8px;	
+	color: #1f1e1d;
+	font-size: 15px;
+}
+
+.btn1{
+	color: white;
+	display: block;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #6948a2;
+	border-bottom: 2px solid #30214a;
+	display: block;
+	width: 130px;
+	font-size: 18px;
+}
+
+.vitrine-destaque a{
+	margin-left: 8px;
+}
+
+.vitrine-destaque a:hover{
+	background-color: #50377a;
+}
+/* Fim Sessão Produtos Destaque */
+
+/* Início Sessão Serviços Descrição*/
+
+section.servicos-descricao{
+	display: flex;
+}
+
+.half1{
+	width: 50%;
+	padding: 90px 0;
+	background-color: #242424;
+	color: white;
+	text-align: right;
+}
+
+.half1-wraper{
+	padding-right: 100px;
+	display: inline-block;
+	text-align: left;
+}
+
+.half1-wraper h2{
+	font-size: 33px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.half1-wraper ul{
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 18px;
+}
+
+.half1-wraper a{
+	margin-left: 30px;
+	/*Define a posição do link ao lado e inferior da lista */
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.half2{
+	width: 50%;
+	padding: 90px 100px;
+	background-color: #6948a2;
+	color: white;
+}
+
+.half2 h2{
+	color: #1f1e1d;
+	font-size: 33px;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.half2 .depoimento-single{
+	margin-top: 20px;
+}
+
+.depoimento-single p{
+	color: #1f1e1d;
+	font-size: 18px;
+}
+
+.navigation{
+	width: 100%;
+	max-width: 700px;
+	margin-top: 30px;
+	float: left;
+}
+
+.arrows{
+	float: left;
+}
+
+.navigation img{
+	margin: 0 15px;
+	cursor: pointer;
+}
+
+.nome-depoimento{
+	float: right;
+	color: #1f1e1d;
+	font-size: 20px;
+}
+/* Fim Sessão Serviços Descrição */
+
+/* Início Media Query */
+
+@media screen and (max-width: 850px){
+	.half1-wraper a{
+		display: block;
+		margin-left: 0;
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	header nav.menu-desktop{
+		display: none;
+	}
+
+	header nav.menu-mobile{
+		display: block;
+	}
+
+
+}
+
+@media screen and (max-width: 768px){
+	section.banner{
+		background-position: center;
+	}
+}
+
+@media screen and (max-width: 580px){
+
+	.text-banner{
+		padding: 40px;
+	}
+
+	.text-banner-single{
+		padding: 10px 15px;
+		font-size: 18px;
+		
+	}
+
+	.text-banner .text-banner-single:nth-of-type(2){
+		width: 264px;
+		position: relative;
+		left: -12px;
+	}
+
+	.text-banner .text-banner-single:nth-of-type(3){
+		width: 224px;
+		position: relative;
+		left: -22px;
+	}
+
+	section.produtos-destaque .line-titulo h2{
+		text-siz
+	}
+
+	section.produtos-destaque .container{
+		text-align: center;
+	}
+
+	.vitrine-destaque{
+		float: none;
+		display: inline-block;
+		width: 80%;
+	}
+
+	.vitrine-destaque a{
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.vitrine-destaque{
+		width: 100%;
+	}
+}
+
+/* Fim Media Query */
+
